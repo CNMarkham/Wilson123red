@@ -30,7 +30,7 @@ public class Throwable : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            if (throwableCounter <= 0)
+            if (throwableCounter >= 0)
             {
 
 

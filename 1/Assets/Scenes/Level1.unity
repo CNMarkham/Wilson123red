@@ -895,9 +895,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1527761254}
     m_Modifications:
+    - target: {fileID: 772662826806101691, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 772662826806101691, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: direction
+      value: 
+      objectReference: {fileID: 811945164}
     - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_Name
       value: shuriken (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: m_TagString
+      value: ThrowingObject
       objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390249, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -939,7 +951,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4221338945140266990, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1608,6 +1621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shuriken
       objectReference: {fileID: 0}
+    - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: m_TagString
+      value: ThrowingObject
+      objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390249, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.480032
@@ -1648,7 +1665,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4221338945140266990, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1699,7 +1717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
-  throwableCounter: 0
+  throwableCounter: 2
   ObjectThrown: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
 --- !u!1001 &847560481
 PrefabInstance:
@@ -1712,6 +1730,10 @@ PrefabInstance:
     - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_Name
       value: shuriken (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: m_TagString
+      value: ThrowingObject
       objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390249, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1753,7 +1775,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4221338945140266990, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3034,6 +3057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shuriken (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: m_TagString
+      value: ThrowingObject
+      objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390249, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.434382
@@ -3074,7 +3101,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4221338945140266990, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3095,6 +3123,10 @@ PrefabInstance:
     - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_Name
       value: shuriken (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: m_TagString
+      value: ThrowingObject
       objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390249, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3136,7 +3168,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4221338945140266990, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3924,9 +3957,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1527761254}
     m_Modifications:
+    - target: {fileID: 772662826806101691, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_Name
       value: shuriken (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006081466200390246, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
+      propertyPath: m_TagString
+      value: ThrowingObject
       objectReference: {fileID: 0}
     - target: {fileID: 2006081466200390249, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3968,7 +4009,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4221338945140266990, guid: 0f4204000f1e3f546968ea1a535df96c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

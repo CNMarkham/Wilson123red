@@ -12,6 +12,11 @@ public class EnemyCollision : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadScene(0);
         }
+        if (collision.gameObject.CompareTag("3"))
+        {
+            Destroy(this.gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 
     // Start is called before the first frame update
