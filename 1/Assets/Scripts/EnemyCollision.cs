@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyCollision : MonoBehaviour
 {
+    //public int enemyCount;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -15,15 +16,14 @@ public class EnemyCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("3"))
         {
             Destroy(this.gameObject);
+
+            GameObject.FindGameObjectWithTag("Portal").GetComponent<Teleport>().enemyCount -= 1;
+
             Destroy(collision.gameObject);
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()

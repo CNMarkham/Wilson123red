@@ -9,12 +9,12 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     private void DestroyThrowable()
     {
-        gameObject.SetActive(false);
-        
+        Destroy(gameObject);
     }
     void Start()
     {
         direction = GameObject.FindGameObjectWithTag("Player").GetComponent<Throwable>();
+        Invoke("DestroyThrowable",5);
     }
 
     // Update is called once per frame

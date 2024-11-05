@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Throwable : MonoBehaviour
 {
     public Vector3 offset;
     public int throwableCounter;
+    public TextMeshProUGUI collectableCounter;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,8 +16,11 @@ public class Throwable : MonoBehaviour
         {
             Destroy(collision.gameObject);
             throwableCounter += 1;
+            collectableCounter.text = throwableCounter.ToString();
+
         }
     }
+
 
 
 
@@ -30,7 +36,7 @@ public class Throwable : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            if (throwableCounter >= 0)
+            if (throwableCounter >= 1)
             {
 
 
@@ -41,13 +47,17 @@ public class Throwable : MonoBehaviour
 
                 Instantiate(ObjectThrown, throwablePosition, transform.rotation);
                 throwableCounter -= 1;
+                collectableCounter.text = throwableCounter.ToString();
             }
 
-        }
-        }
 
-
+        }
+    }
+ 
 
 }
+
+
+
 
 
