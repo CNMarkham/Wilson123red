@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
     [Tooltip("Adjusts Movement for Platform Games")]
     public bool platformSettings = false;
 
-    private float masterSpeed;
+    public float masterSpeed;
 
 
 
