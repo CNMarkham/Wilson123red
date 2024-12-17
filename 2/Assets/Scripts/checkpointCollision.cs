@@ -17,7 +17,7 @@ public class checkpointCollision : MonoBehaviour
         if (other.gameObject.tag == "Player" && didCollide == false)
         {
             didCollide = true;
-            count.triggeredCheckpoints++;
+            count.triggeredCheckpoints++;                                      
         }
     }
 
