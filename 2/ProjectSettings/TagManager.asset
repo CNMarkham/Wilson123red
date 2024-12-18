@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Codey
   - Checkpoint
+  - ItemBox
   layers:
   - Default
   - TransparentFX
