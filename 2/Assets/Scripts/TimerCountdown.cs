@@ -27,7 +27,7 @@ public class TimerCountdown : MonoBehaviour
             startCountdown.text = "";
             totalLapTime-= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-            speed.Speed = 40;
+            speed.Speed = 200;
         }
         if (totalLapTime <= 0)
         {
