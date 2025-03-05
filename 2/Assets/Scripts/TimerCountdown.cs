@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class TimerCountdown : MonoBehaviour
 {
     public CodeyMove speed;
@@ -12,6 +13,7 @@ public class TimerCountdown : MonoBehaviour
     public float totalLapTime;
     public float totalCountdownTime;
 
+    public bool Boom;
     // Update is called once per frame
     void Update()
     {
@@ -27,11 +29,16 @@ public class TimerCountdown : MonoBehaviour
             startCountdown.text = "";
             totalLapTime-= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-            speed.Speed = 200;
+            if (Boom == false)
+            {
+                speed.Speed = 200;
+                Boom = true;
+            }
+            
         }
         if (totalLapTime <= 0)
         {
-            print("times up");
+            SceneManager.LoadScene(2);
         }
     }
 }

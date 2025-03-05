@@ -28,7 +28,6 @@ public class CodeyMove : MonoBehaviour
             move = transform.forward * Speed * Time.deltaTime * vertical;
             transform.Rotate(rotation);
             rb.AddForce(move, ForceMode.VelocityChange);
-
             anim.SetBool("isRunning", move != Vector3.zero);
         }
         
