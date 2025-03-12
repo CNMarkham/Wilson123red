@@ -31,7 +31,7 @@ public class TimerCountdown : MonoBehaviour
             lapTime.text = Mathf.Round(totalLapTime).ToString();
             if (Boom == false)
             {
-                speed.Speed = 200;
+                speed.Speed = 400;
                 Boom = true;
             }
             

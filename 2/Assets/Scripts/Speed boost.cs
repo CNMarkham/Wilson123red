@@ -13,14 +13,14 @@ public class Speedboost : MonoBehaviour
     void Start()
     {
         Codey = FindObjectOfType<CodeyMove>();
-        Codey.Speed = 400f;
-        Invoke("Slow", 5.0f);
-        Destroy(gameObject, 5);
+        Codey.Speed = 600f;
+        Invoke("Slow", 10.0f);
+        Destroy(gameObject, 10);
       
     }
     void Slow()
     {
-        Codey.Speed = 200f;
+        Codey.Speed = 400f;
     }
 
 }
